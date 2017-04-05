@@ -1,2 +1,5 @@
 # livetiles
-Application of livetiles, just click on tile and see how they're becomming alive! 
+# ITmokykla assignment No.3 2nd part.
+
+Click on the box and see the magic happen!
+
