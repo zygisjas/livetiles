@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Magic boxes - Žygimantas Jasiūnas.</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style/main.css">
+	<script src="main.js"></script>
+	<script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="jquery-3.1.1.min.js"></script>
+</head>
+<body id="magic_boxes">
+	<div class='boxes'>
+		<div class='firstbox box'>	</div>
+		<div class='secondbox box'>	</div>
+		<div class='thirtbox box'>	</div>
+		<div class='forthbox box'>	</div>
+		<div class='fifthbox box'>	</div>
+		<div class='sixthbox box'>	</div>
+		<div class='seventhbox box'></div>
+		<div class='eithbox box'>	</div>	
+		<div class='ninethbox box'>	</div>
+		<div class='tenthbox box'>	</div>
+		<div class='forthbox box'>	</div>
+	</div>
+<script>
+	$(document).ready(function(){
+	$('.box').click(function () { 
+	var animpattern = ['change-size', 'change-size2', 'change-size3'];
+	var randomnumber = Math.floor(Math.random() * animpattern.length);
+	$(this).toggleClass(animpattern[randomnumber]);
+	});
+	});
+</script>
+</body>
+</html>

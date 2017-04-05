@@ -1,0 +1,90 @@
+body{
+	background-color: #ffffff;
+	margin: 0;
+	padding: 0;
+	position:relative;
+}
+.boxes{
+	margin-left: 22px;
+ 	position: fixed;
+}
+.box {
+	float: left;
+    width: 120px;
+    height: 120px;
+}
+.firstbox{
+	background-color: #dd584a;
+}
+.secondbox{
+ 	background-color: #aaa84a;
+}
+ .thirtbox{
+ 	background-color: #85684a;
+}
+.forthbox{
+ 	background-color: #8fff4a;
+}
+.fifthbox{
+ 	background-color: #fff11a;
+}
+.sixthbox{
+ 	background-color: #80114a;
+}
+.seventhbox{
+ 	background-color: #eabcca;
+}
+.eithbox{
+ 	background-color: #fab999;
+}
+.ninethbox{
+ 	background-color: #faff99;
+}
+.tenthbox{
+	background-color: #fa1199;
+}
+/*Fall animation*/
+@keyframes fall1{
+	0%{transform: rotateY(0deg); opacity: 1}
+	100%{transform: translateY(1200px) rotateY(720deg);}
+}
+
+@keyframes fall2{
+	0%{transform: scaleY(1)}
+	50%{transform: scaleY(11)}
+	100%{transform: translateY(800px)}
+}
+@keyframes fall3{
+	0%{transform: rotateZ(0deg)}
+	50%{transform: rotateZ(60deg)}
+	70%{transform: rotateZ(40deg)}
+	80%{transform: rotateZ(53deg)}
+	100%{transform: rotateZ(0deg) translateY(800px)}
+}
+/* getting back animations */
+@keyframes getback{
+	0%{transform: translateY(800px)}
+	50%{transform: scaleY(11)}
+	100%{transform: translateY() scaleY(1)}
+}
+@keyframes getback2{
+	0%{transform: translateY(800px)}
+	100%{transform: translateY(0px)}
+}
+@keyframes getback3{
+	0%{transform: translateY(800px) rotateZ(0deg);}
+	33%{transform: translateY(300px) rotateX(0deg);}
+	66%{transform: translateY(500px)rotateX(360deg);}
+	100%{transform: translatey(0px) rotateZ(720deg);}
+}
+.change-size {
+    animation: fall1 2s  ease forwards,
+				getback 2s 2.1s ease forwards;
+}
+.change-size2 {
+   animation: fall2 2s  ease forwards,
+			 getback2 2s 2.1s ease forwards;
+}.change-size3 {
+	transform-origin: 0px 0px;
+    animation: fall3 2s ease forwards,getback3 4s 2.1s ease forwards;
+}
