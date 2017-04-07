@@ -77,14 +77,14 @@ body{
 	66%{transform: translateY(500px)rotateX(360deg);}
 	100%{transform: translatey(0px) rotateZ(720deg);}
 }
-.change-size {
+.first_animaton{
     animation: fall1 2s  ease forwards,
 				getback 2s 2.1s ease forwards;
 }
-.change-size2 {
+.second_animation{
    animation: fall2 2s  ease forwards,
 			 getback2 2s 2.1s ease forwards;
-}.change-size3 {
+}.third_animation{
 	transform-origin: 0px 0px;
     animation: fall3 2s ease forwards,getback3 4s 2.1s ease forwards;
 }
