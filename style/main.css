@@ -86,5 +86,5 @@ body{
 			 getback2 2s 2.1s ease forwards;
 }.third_animation{
 	transform-origin: 0px 0px;
-    animation: fall3 2s ease forwards,getback3 4s 2.1s ease forwards;
+    animation: fall3 2s ease forwards,getback3 4s 2.2s ease forwards;
 }
